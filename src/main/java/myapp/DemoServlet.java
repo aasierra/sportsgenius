@@ -34,5 +34,7 @@ public class DemoServlet extends HttpServlet {
   @Override
   protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     super.doPost(req, resp);
+    resp.setContentType("application/json");
+    resp.getWriter().println("{ \"name\": \"Real hello World\" }");
   }
 }
