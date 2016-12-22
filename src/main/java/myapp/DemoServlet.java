@@ -16,7 +16,6 @@
 
 package myapp;
 
-import com.sun.javafx.tools.packager.Log;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -35,6 +34,5 @@ public class DemoServlet extends HttpServlet {
   @Override
   protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     super.doPost(req, resp);
-    Log.info("WHAT IS UP HELLO WORLD REALS");
   }
 }
